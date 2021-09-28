@@ -1,0 +1,769 @@
+/* Add your styles here */
+
+
+html, body{
+    margin:0;
+    padding:0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Kaisei Tokumin', serif;
+}
+
+/*NAVBAR*/
+@media (max-width: 991.98px) {
+    .offcanvas-collapse {
+      position: fixed;
+      top: 56px; /* Height of navbar */
+      bottom: 0;
+      left: 100%;
+      width: 100%;
+      padding-right: 1rem;
+      padding-left: 1rem;
+      overflow-y: auto;
+      visibility: hidden;
+      background-color: rgba(0,0,0,0.5);
+      transition: transform .3s ease-in-out, visibility .3s ease-in-out;
+    }
+    .offcanvas-collapse.open {
+      visibility: visible;
+      transform: translateX(-100%);
+    }
+  }
+
+ 
+
+  body > header > nav{
+      background-color: rgba(0,0,0,0.5);
+  }
+
+  .nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+  }
+  
+  .nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    color: rgba(255, 255, 255, .75);
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .nav-underline .nav-link {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    font-size: .875rem;
+    color: #6c757d;  
+  }
+
+.navbar-nav {
+  
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;    
+}
+
+
+@media (min-width: 992px){
+     .navbar-nav {
+      flex-direction: row;
+      justify-content: center; 
+      margin-left:0px; 
+
+  }
+}
+
+
+  
+  .nav-underline .active {
+    font-weight: 500;
+    color: #343a40;
+  }  
+
+/*space between navlinks*/
+  .nav-item{
+      margin-left:50px;
+      font-size:20px;
+  }
+
+  #bootscore-navbar{
+    margin-left:200px;
+  }
+
+  /*POSITION NAVBAR LINKS at 992px*/
+  @media (min-width: 1440px){
+  .navbar-expand-lg .navbar-nav {
+      flex-direction: row;
+      justify-content: center;  
+      margin-left:275px;
+
+  }
+}
+
+@media (min-width: 2560px){
+  .navbar-expand-lg .navbar-nav {
+      flex-direction: row;
+      justify-content: center;  
+      margin-left:775px;
+
+  }
+}
+
+
+.btn-outline-secondary {
+    color: #ffffff !important;
+    border-color: #ffffff !important;
+    width:300px;
+    height:50px;
+    
+}
+
+/*ADDED BREAKPOINT TO FIX TEXT FROM DISPLAY COLUMN IN NAVBAR AT 992PX*/
+@media (min-width: 992px){
+.navbar-expand-lg {
+    flex-wrap: wrap !important;
+    justify-content: flex-start !important;
+   
+}
+}
+
+
+
+/*TOP SOCIAL ICONS*/
+.social-icons {
+    display:flex;
+    flex-direction: row;
+    align-items: flex-end;
+    list-style: none;
+    box-sizing: border-box;
+    margin-right: 50px;
+    
+ 
+}
+
+
+
+.social-icons a i{
+    color:white;
+    margin-left:20px;
+}
+
+
+.icon-specific{
+    margin-left:20px;
+    margin-right:20px;
+    color:white;
+   
+    
+}
+
+.navbar-brand{
+    font-family:'Kaisei Tokumin', serif;
+    font-size:20px !important;
+}
+
+body > header > nav{
+    top:0px;
+}
+
+
+
+/*carousel image sizes*/
+.carousel-inner > .item > img {
+    width:1900px;
+    max-height:500px;
+    
+  }
+
+
+  /*make any photo fit carousel*/
+  .carousel-item{
+    max-height:850px;
+    max-width:3000px;
+  }
+
+
+  @media (max-width:1440px) and (min-width:1024px) {
+  .carousel-item{
+    max-height:850px;
+    max-width:3000px;
+  }
+}
+
+@media (max-width:1024px) and (min-width:768px) {
+  .carousel-item{
+    max-height:675px;
+    max-width:3000px;
+  }
+}
+
+@media (max-width:768px) and (min-width:541px) {
+  .carousel-item{
+    max-height:500px;
+    max-width:3000px;
+  }
+}
+
+@media (max-width:540px) and (min-width:426px) {
+  .carousel-item{
+    max-height:325px;
+   
+  }
+}
+
+@media (max-width:425px) and (min-width:411px) {
+  .carousel-item{
+    max-height:250px;
+   
+  }
+}
+
+@media (max-width:411px) and (min-width:375px) {
+  .carousel-item{
+    max-height:225px;
+   
+  }
+}
+
+@media (max-width:375px) and (min-width:320px) {
+  .carousel-item{
+    max-height:200px;
+   
+  }
+}
+
+@media (max-width:320px) and (min-width:280px) {
+  .carousel-item{
+    max-height:175px;
+   
+  }
+}
+
+
+
+
+
+
+@media (min-width:1441px) and (max-width:2000px) {
+  .carousel-item{
+    max-height:1000px;
+    max-width:3000px;
+  }
+}
+
+  
+@media (min-width: 2000px){
+.row-cols-md-2>* {
+    flex: 0 0 auto;
+    width: 50%;
+    margin-right: -800px;
+    margin-left: 450px;
+}
+
+.carousel-item{
+  max-height:1300px;
+  max-width:3000px;
+}
+}
+
+
+  /*For Dark Overlay on Slider Images */
+  .carousel-item:after {
+    content:"";
+    display:block;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:rgba(0,0,0,0.5);
+  }
+
+  
+/*For Carousel Caption*/
+#carouselExampleControls > div > div:nth-child(1) > div{
+    position: absolute;
+    right: 15%;
+    bottom: 1.25rem;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 20rem;
+    color: #fff;
+    text-align: center;
+    z-index:1;
+} 
+
+/*Carousel Caption for 2nd Slide*/
+#carouselExampleControls > div > div:nth-child(2) > div{
+    position: absolute;
+    right: 15%;
+    bottom: 1.25rem;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 20rem;
+    color: #fff;
+    text-align: center;
+    z-index:1;
+}
+
+/*Carousel Caption for 3rd Slide*/
+#carouselExampleControls > div > div:nth-child(3) > div{
+    position: absolute;
+    right: 15%;
+    bottom: 1.25rem;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 20rem;
+    color: #fff;
+    text-align: center;
+    z-index:1;
+}
+
+@media(min-width:768px) and (max-width:868px){
+  /*For Carousel Caption*/
+#carouselExampleControls > div > div:nth-child(1) > div{
+  position: absolute;
+  right: 15%;
+  bottom: 1.25rem;
+  left: 15%;
+  padding-top: 1.25rem;
+  padding-bottom: 2rem;
+  color: #fff;
+  text-align: center;
+  z-index:1;
+} 
+
+/*Carousel Caption for 2nd Slide*/
+#carouselExampleControls > div > div:nth-child(2) > div{
+  position: absolute;
+  right: 15%;
+  bottom: 1.25rem;
+  left: 15%;
+  padding-top: 1.25rem;
+  padding-bottom: 2rem;
+  color: #fff;
+  text-align: center;
+  z-index:1;
+}
+
+/*Carousel Caption for 3rd Slide*/
+#carouselExampleControls > div > div:nth-child(3) > div{
+  position: absolute;
+  right: 15%;
+  bottom: 1.25rem;
+  left: 15%;
+  padding-top: 1.25rem;
+  padding-bottom: 2rem;
+  color: #fff;
+  text-align: center;
+  z-index:1;
+}
+}
+
+
+
+
+
+@media(min-width:1024px) and (max-width:1439px){
+/*For Carousel Caption*/
+#carouselExampleControls > div > div:nth-child(1) > div{
+position: absolute;
+right: 15%;
+bottom: 1.25rem;
+left: 15%;
+padding-top: 1.25rem;
+padding-bottom: 15rem;
+color: #fff;
+text-align: center;
+z-index:1;
+} 
+
+/*Carousel Caption for 2nd Slide*/
+#carouselExampleControls > div > div:nth-child(2) > div{
+position: absolute;
+right: 15%;
+bottom: 1.25rem;
+left: 15%;
+padding-top: 1.25rem;
+padding-bottom: 15rem;
+color: #fff;
+text-align: center;
+z-index:1;
+}
+
+/*Carousel Caption for 3rd Slide*/
+#carouselExampleControls > div > div:nth-child(3) > div{
+position: absolute;
+right: 15%;
+bottom: 1.25rem;
+left: 15%;
+padding-top: 1.25rem;
+padding-bottom: 15rem;
+color: #fff;
+text-align: center;
+z-index:1;
+}
+}
+
+/*Carousel Caption Header Text for 1st Slide*/
+#carouselExampleControls > div > div:nth-child(1) > div > h5{
+    font-size:56px;
+    font-family: 'Kaisei Tokumin', serif;
+}
+
+/*Carousel Caption Header Text for 2nd Slide*/
+#carouselExampleControls > div > div:nth-child(2) > div > h5{
+    font-size:56px;
+    font-family: 'Kaisei Tokumin', serif;
+}
+
+/*Carousel Caption Header Text for 3rd Slide*/
+#carouselExampleControls > div > div:nth-child(3) > div > h5{
+    font-size:56px;
+    font-family: 'Kaisei Tokumin', serif;
+}
+
+/*Carousel Caption paragraph Text for 1st Slide*/
+#carouselExampleControls > div > div:nth-child(1) > div > p{
+    font-size:26px;
+    font-family: 'Kaisei Tokumin', serif;
+}
+
+/*Carousel Caption paragraph Text for 2nd Slide*/
+#carouselExampleControls > div > div:nth-child(2) > div > p{
+    font-size:26px;
+    font-family: 'Kaisei Tokumin', serif;
+}
+
+/*Carousel Caption paragraph Text for 3rd Slide*/
+#carouselExampleControls > div > div:nth-child(3) > div > p{
+    font-size:26px;
+    font-family: 'Kaisei Tokumin', serif;
+}
+
+
+.second-section-places{   
+    
+    font-size:16px;
+    margin-top:100px;
+    margin-bottom:150px;
+}
+
+
+@media screen and (max-width:500px){
+    .second-section-places{
+        margin-top:75px;
+    }    
+}
+
+
+/*Border None for Where ive been cards*/
+body > section:nth-child(3) > div > div > div:nth-child(1) > div{
+    border:none;
+    font-family: 'Kaisei Tokumin', serif;
+}
+body > section:nth-child(3) > div > div > div:nth-child(2) > div{
+    border:none;
+    font-family: 'Kaisei Tokumin', serif;
+}
+
+body > section:nth-child(3) > div > div > div:nth-child(3) > div{
+    border:none;
+    font-family: 'Kaisei Tokumin', serif;
+}
+
+body > section:nth-child(3) > div > div > div:nth-child(4) > div{
+    border:none;
+    font-family: 'Kaisei Tokumin', serif;
+}
+/*WHERE IVE BEEN TITLE*/
+body > section:nth-child(3) > div > p{
+    font-family: 'Kaisei Tokumin', serif;
+    
+}
+
+@media (max-width:2720px) and (min-width:1597px){
+.second-section-places {
+    font-size: 16px;
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+}
+
+
+
+@media (max-width:1028px) and (min-width:769px){
+    .second-section-places {
+        font-size: 16px;
+        margin-top: 100px;
+        margin-bottom: 150px;
+    }
+    }
+
+@media (max-width:768px) and (min-width:426px){
+    .second-section-places {
+        font-size: 16px;
+        margin-top: 100px;
+        margin-bottom: 150px;
+    }
+    }
+
+    body > section:nth-child(3) > div > div.row.row-cols-1.row-cols-md-2.g-4.mx-5 > div > div > div > a{
+      width:100px;
+    }
+    
+
+/*ABOUT ME SECTION*/
+
+
+/*PERSONAL image*/
+body > section:nth-child(4) > div > div > div > div > div.col-md-4 > img{
+  margin-top:10px;  
+  border:solid 1px rgb(0, 0, 0);
+  border-radius:50%;
+  
+  
+  
+ 
+}
+
+.about-me-line-logo{
+    display:Flex;
+    flex-direction: row;
+}
+
+body > section:nth-child(4) > div > div > div.card.mb-3 > div > div.col-md-8 > div > p{
+    font-size:18px;
+    font-family: 'Kaisei Tokumin', serif;
+    text-align: center;
+   
+}
+
+/*TEXT BETWEEN TWO LINES*/
+.header__center {
+    font-size: 2rem;
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-column-gap: 1.2rem;
+    align-items: center;
+    font-size: 40px;
+    font-family: 'Kaisei Tokumin', serif;
+    
+}
+
+.header__center::before,
+.header__center::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: currentColor;
+}
+
+
+/*Bottom Line 2*/
+body > section:nth-child(4) > div > div > div > div > img{
+    margin-bottom:100px;
+    height:1px;
+    margin-top:25px; 
+  }
+
+
+
+/*no border for about me card*/
+body > section:nth-child(4) > div > div > div{
+    border:none;
+}
+
+.social-icons-2{
+    display:flex;
+    flex-direction: row;
+    align-items: flex-end;
+    list-style: none;
+    box-sizing: border-box;
+    justify-content:center;
+    margin-top:25px;
+    margin-bottom:25px;
+}
+
+.icon-specific-2 a{
+    margin-left:20px;
+    margin-right:20px;
+    color:rgb(0, 0, 0);
+   
+    
+}
+
+/*LATEST POSTS*/
+.third-section-blog{    
+    font-size:24px;   
+    margin-bottom:200px;
+    font-family: 'Kaisei Tokumin', serif;
+}
+
+/*post card title*/
+body > section:nth-child(5) > div > div > div:nth-child(1) > div > h5{
+    font-size: 32px;
+}
+
+/*post card title*/
+body > section:nth-child(5) > div > div > div:nth-child(2) > div > h5{
+    font-size: 32px;
+}
+
+/*post card title*/
+body > section:nth-child(5) > div > div > div:nth-child(3) > div > h5{
+    font-size: 32px;
+}
+
+/*post card paragraph*/
+body > section:nth-child(5) > div > div > div:nth-child(1) > div > p:nth-child(2){
+    font-size:20px;
+}
+
+body > section:nth-child(5) > div > div > div:nth-child(2) > div > p:nth-child(2){
+    font-size:20px;
+}
+
+body > section:nth-child(5) > div > div > div:nth-child(3) > div > p:nth-child(2){
+    font-size:20px;
+}
+
+
+
+/*FEATURED ARTICLES HEADER*/
+
+body > p{
+    font-family:'Kaisei Tokumin', serif; 
+}
+
+/*FOOTER*/
+
+.footer-dark {
+    padding:50px 0;
+    color:#f0f9ff;
+    background-color:#282d32;
+  }
+  
+  .footer-dark h3 {
+    margin-top:0;
+    margin-bottom:12px;
+    font-weight:bold;
+    font-size:16px;
+  }
+  
+  .footer-dark ul {
+    padding:0;
+    list-style:none;
+    line-height:1.6;
+    font-size:14px;
+    margin-bottom:0;
+  }
+  
+  .footer-dark ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.6;
+  }
+  
+  .footer-dark ul a:hover {
+    opacity:0.8;
+  }
+  
+  @media (max-width:767px) {
+    .footer-dark .item:not(.social) {
+      text-align:center;
+      padding-bottom:20px;
+    }
+  }
+  
+  .footer-dark .item.text {
+    margin-bottom:36px;
+  }
+  
+  @media (max-width:767px) {
+    .footer-dark .item.text {
+      margin-bottom:0;
+    }
+  }
+  
+  .footer-dark .item.text p {
+    opacity:0.6;
+    margin-bottom:0;
+  }
+  
+  .footer-dark .item.social {
+    text-align:center;
+  }
+  
+  @media (max-width:991px) {
+    .footer-dark .item.social {
+      text-align:center;
+      margin-top:20px;
+    }
+  }
+  
+  .footer-dark .item.social > a {
+    font-size:20px;
+    width:36px;
+    height:36px;
+    line-height:36px;
+    display:inline-block;
+    text-align:center;   
+    margin:0 8px;
+    color:#fff;
+    opacity:0.75;
+  }
+  
+  .footer-dark .item.social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-dark .copyright {
+    text-align:center;
+    padding-top:24px;
+    opacity:0.3;
+    font-size:13px;
+    margin-bottom:0;
+  }
+
+  #media_image-9 > img{
+    margin-top:10px;  
+    border-radius:50%;
+
+  }
+
+
+  .about-me p {
+    font-size:20px;
+    font-family: 'Kaisei Tokumin', serif;
+    
+  }
+
+
+  /*Font Family for All*/
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Kaisei Tokumin', serif;
+    
+  }
+
+  h1{
+    text-align:center;
+  }
+
+
+
+  .entry-header{
+    text-align:center;
+  }
+ 
+
+
