@@ -36,7 +36,7 @@
 <header class="mb-auto">
       <nav class="navbar navbar-expand-lg navbar-dark fixed-top" aria-label="Main navigation">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Lone Traveler</a>
+    <a class="navbar-brand" href="#"> <?php dynamic_sidebar( 'navbar-logo' ); ?></a>
     <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>

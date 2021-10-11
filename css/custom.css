@@ -4,7 +4,7 @@
 html, body{
     margin:0;
     padding:0;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth !important;
     box-sizing: border-box;
     overflow-x: hidden;
     font-family: 'Kaisei Tokumin', serif;
@@ -186,10 +186,6 @@ body > header > nav{
 
 
   /*make any photo fit carousel*/
-  .carousel-item{
-    max-height:850px;
-    max-width:3000px;
-  }
 
 
   @media (max-width:1440px) and (min-width:1024px) {
@@ -206,12 +202,20 @@ body > header > nav{
   }
 }
 
-@media (max-width:768px) and (min-width:541px) {
+@media (max-width:768px) and (min-width:654px) {
   .carousel-item{
     max-height:500px;
     max-width:3000px;
   }
 }
+
+@media (max-width:654px) and (min-width:541px) {
+  .carousel-item{
+    max-height:425px;
+    max-width:3000px;
+  }
+}
+
 
 @media (max-width:540px) and (min-width:426px) {
   .carousel-item{
@@ -220,9 +224,9 @@ body > header > nav{
   }
 }
 
-@media (max-width:425px) and (min-width:411px) {
+@media (max-width:426px) and (min-width:411px) {
   .carousel-item{
-    max-height:250px;
+    max-height:245px;
    
   }
 }
@@ -262,17 +266,40 @@ body > header > nav{
 
   
 @media (min-width: 2000px){
-.row-cols-md-2>* {
-    flex: 0 0 auto;
-    width: 50%;
-    margin-right: -800px;
-    margin-left: 450px;
+  
+  body > section:nth-child(3) > div > div {
+     display:flex;
+      margin-left: 0rem !important;
+      margin-right: 40rem!important;
+      margin-left: 40rem!important;
+
+  }
+
+ 
+.card-body{
+  max-width:650px;
 }
 
-.carousel-item{
-  max-height:1300px;
-  max-width:3000px;
+.carousel-item img{  
+  width:100% !important;
+  height:125vh !important; 
+  
 }
+
+#carouselExampleControls > div > div:nth-child(1) > div {
+  padding-bottom:45rem !important;
+}
+
+#carouselExampleControls > div > div:nth-child(2) > div {
+  padding-bottom:45rem !important;
+}
+
+#carouselExampleControls > div > div:nth-child(3) > div {
+  padding-bottom:45rem !important;
+}
+
+
+
 }
 
 
@@ -466,6 +493,10 @@ z-index:1;
 }
 
 
+
+
+
+
 /*Border None for Where ive been cards*/
 body > section:nth-child(3) > div > div > div:nth-child(1) > div{
     border:none;
@@ -521,7 +552,8 @@ body > section:nth-child(3) > div > p{
       width:100px;
     }
     
-
+    
+   
 /*ABOUT ME SECTION*/
 
 
@@ -748,6 +780,13 @@ body > p{
     
   }
 
+  .card-body p{
+    font-size:18px;
+  }
+
+  .card-body h5{
+    font-size:28px !important;
+  }
 
   /*Font Family for All*/
   h1, h2, h3, h4, h5, h6 {
@@ -759,6 +798,11 @@ body > p{
     text-align:center;
   }
 
+  h6{
+    margin-top:-20px !important;
+    font-size:32px !important;
+  }
+
 
 
   .entry-header{
@@ -766,4 +810,50 @@ body > p{
   }
  
 
+/*custom scrollbar*/
+  body::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+  height:10px;
+}
 
+/*scroll to top button*/
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  background-color: black;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 48px;
+  width: 48px; 
+ 
+ 
+
+
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+
+/*styles the contact form button*/
+.tnp-widget-minimal input.tnp-submit {
+  width: 50% !important; 
+  background-color: rgb(0, 0, 0) !important;
+  margin-left:25% !important;
+}
